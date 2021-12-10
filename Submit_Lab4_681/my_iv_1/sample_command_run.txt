@@ -1,0 +1,4 @@
+my_iv_1.iv 600 600 1 1 1 0 0 input.jpg
+
+
+input.jpg should have resolution 800X800
