@@ -1,0 +1,80 @@
+#Inventor V2.1 ascii
+
+PerspectiveCamera {
+    position	5 5 10
+    orientation	-0.50263 2.862766 2.047575  0.711373
+    nearDistance	1
+    farDistance	20
+    focalDistance	15
+    heightAngle	0.72
+}
+
+# set lighting model to BASE_COLOR for ivview
+  LightModel {
+     model BASE_COLOR
+  }
+
+Separator {
+
+# light
+  PointLight {
+    on TRUE
+    intensity 1
+    color 1 1 1
+    location -6.96012       13.6997      7.49577
+  }
+
+PointLight {
+    on TRUE
+    intensity 1
+    color 1 1 1
+    location 5 15 5
+}
+
+
+# sphere 1
+  Separator {
+    
+    Transform {
+    translation 0 0 0
+        }
+    Material {
+      diffuseColor 1 0 0
+      specularColor 0.7 0.7 0.7 
+      shininess	 0.5
+    }
+    Sphere {radius 4.2}
+  }
+
+# sphere 2
+  Separator {
+
+    Transform {
+      rotation 0.4 0.6 0 1
+      translation 1.5 7 -2
+      scaleFactor 1.5 2.5 2
+      
+    }
+    Material {
+      diffuseColor 0 1 0
+      specularColor 0.7 0.7 0.7 
+      shininess 0.5
+    }
+    Sphere {}
+  }
+
+# sphere 3
+  Separator {
+
+    Transform {
+      translation 3 1.5 -1
+      scaleFactor 2 1.5 1
+    }
+    Material {
+      diffuseColor 0 0 1
+      specularColor 0.7 0.7 0.7 
+      shininess 0.5
+    }
+    Sphere { radius 1.5}
+  }
+}
